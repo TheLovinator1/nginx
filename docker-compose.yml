@@ -1,0 +1,17 @@
+services:
+  nginx:
+    # image: nginx
+    build: .
+    restart: unless-stopped
+    ports:
+      - "80:80/tcp"
+      - "443:443/udp"
+    volumes:
+      - logs:/var/log/nginx
+      - config:/etc/nginx/
+      - data:/usr/share/nginx
+
+volumes:
+  logs:
+  config:
+  data:
