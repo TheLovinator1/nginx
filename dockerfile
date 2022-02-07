@@ -13,10 +13,9 @@ RUN gpg --refresh-keys && pacman-key --init && pacman-key --populate archlinux
 # https://wiki.archlinux.org/title/locale
 RUN echo "en_US.UTF-8 UTF-8" >"/etc/locale.gen" && locale-gen && echo "LANG=en_US.UTF-8" >"/etc/locale.conf"
 
-# Update the system and install qbittorent-nox and Python
-# Python is needed for the torrent search tab
-# https://archlinux.org/packages/community/x86_64/qbittorrent-nox/
-# Modules can be found here: https://aur.archlinux.org/packages?O=0&SeB=n&K=nginx-mainline&outdated=&SB=p&SO=a&PP=250&submit=Go
+# Update the system and install nginx-mainline
+# Use mainline version instead of stable, stable does not mean more reliable or more bug-free
+# https://archlinux.org/packages/community/x86_64/nginx-mainline/
 RUN pacman -Syu --noconfirm && pacman -S nginx-mainline --noconfirm
 
 # Remove cache. TODO: add more cleanup. Should we remove pacman?
