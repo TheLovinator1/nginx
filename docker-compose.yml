@@ -1,7 +1,7 @@
 services:
   nginx:
-    # image: nginx
-    build: .
+    image: ghcr.io/thelovinator1/nginx:master
+    # build: .
     restart: unless-stopped
     ports:
       - "80:80/tcp"
