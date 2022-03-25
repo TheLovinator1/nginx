@@ -1,6 +1,7 @@
 FROM archlinux
 
-# Add mirrors for Sweden. You can add your own mirrors to the mirrorlist file. Should probably use reflector.
+# Add mirrors for Sweden. You can add your own mirrors to the mirrorlist file. Should probably use Reflector.
+# https://wiki.archlinux.org/title/reflector
 ADD mirrorlist /etc/pacman.d/mirrorlist
 
 # NOTE: For Security Reasons, archlinux image strips the pacman lsign key.
