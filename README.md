@@ -1,10 +1,10 @@
 # Nginx
 
-A high performance web server and a reverse proxy server. Based on the mainline version.
+A high performance web server and a reverse proxy server.
 
 ## Docker
 
-This Docker image is using the [Arch Linux](https://hub.docker.com/_/archlinux/) as base image.
+This Docker image is using [Ubuntu 22.04](https://hub.docker.com/_/ubuntu/) as base image.
 
 ## Ports
 
@@ -18,4 +18,4 @@ This Docker image is using the [Arch Linux](https://hub.docker.com/_/archlinux/)
 - Email: [tlovinator@gmail.com](mailto:tlovinator@gmail.com)
 - Discord: TheLovinator#9276
 - Steam: [TheLovinator](https://steamcommunity.com/id/TheLovinator/)
-- Send an issue: [docker-arch-nginx/issues](https://github.com/TheLovinator1/docker-arch-nginx/issues)
+- Send an issue: [nginx/issues](https://github.com/Feed-The-Fish/nginx/issues)
