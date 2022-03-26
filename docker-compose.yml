@@ -1,16 +1,16 @@
 services:
   nginx:
-    image: ghcr.io/thelovinator1/nginx:master
-    # build: .
+    image: ghcr.io/feed-the-fish/nginx:master
     restart: unless-stopped
     ports:
       - "80:80/tcp"
+      - "80:80/udp"
+      - "443:443/tcp"
       - "443:443/udp"
     volumes:
       - logs:/var/log/nginx
       - config:/etc/nginx/
-      - data:/usr/share/nginx
-
+      - data:/var/www
 volumes:
   logs:
   config:
