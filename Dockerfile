@@ -1,5 +1,5 @@
 # TODO: #5 Add logrotate
-
+# TODO: #6 Add health check
 FROM ubuntu:devel
 
 # To run nginx as a non-root user, you need to add/change 'user nginx;' in your /etc/nginx/nginx.conf:
