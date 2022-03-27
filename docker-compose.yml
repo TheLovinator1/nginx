@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: ghcr.io/feed-the-fish/nginx:master
+    image: ghcr.io/thelovinator1/nginx:master
     restart: unless-stopped
     ports:
       - "80:80/tcp"
